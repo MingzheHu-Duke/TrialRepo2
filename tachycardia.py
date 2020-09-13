@@ -29,3 +29,16 @@ def case_space_remove(a_string):
     # Strip both the leading and trailing space
     out = a_string.strip(" ")
     return out
+
+
+def remove_punc(a_string):
+    """ Remove punctuations in the string_match
+    Parameters: a_string: The string that you want to process
+
+    Outputs:
+    out: The string that has been processed
+    """
+    import string
+    # Remove the punctuations in the string
+    out = a_string.translate(str.maketrans('', '', string.punctuation))
+    return out
