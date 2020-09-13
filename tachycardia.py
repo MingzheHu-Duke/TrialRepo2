@@ -13,3 +13,19 @@ def data_input():
         print("Please enter Yes/No")
         choice = input()
     return ocr_string
+
+
+def case_space_remove(a_string):
+    """ Change Capital letters into lower format and remove the
+        leading and trialing spaces
+    Parameters:
+    a_string: The string that you want to process
+
+    Outputs:
+    out: The string that has been processed
+    """
+    # Turn all the upper cases in string into lower cases
+    a_string = a_string.lower()
+    # Strip both the leading and trailing space
+    out = a_string.strip(" ")
+    return out
